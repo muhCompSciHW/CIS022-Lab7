@@ -1,8 +1,9 @@
 // Project:
 // Module:
 // Date:
-// Developer:
-// Purpose:
+// Developer: Morgan Shorter-McFarlane
+// Purpose: Check if three line segments can make a triange. Determine whether the triangle is scalene, isosceles, or equilateral.
+//           Output the result
 
 headers
 namespace
