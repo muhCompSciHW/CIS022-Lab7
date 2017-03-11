@@ -33,7 +33,7 @@ int triangleShape( int a, int b, int c) //Define an integer returning fucntion t
 		if (equalSides == 4)  //correct for equilateral triangles
 			equalSides = 3;
 	}
-	triangleType Answer = static_cast<triangleType> (equalSides) // Because I lose points if I don't show that I know how to use enumerated types
+	triangleType Answer = static_cast<triangleType> (equalSides) // Because I lose points if I don't show that I know how to use enumeration types
 	
 	return equalSides; //return a value from 0-3
 }
@@ -44,7 +44,7 @@ int main() //Main program entry point
 	int a; // Declare three variables that will hold the side lengths
 	int b;
 	int c;
-	enum triangleType {noTriangle, scalene, isosceles, equilateral}; //Define superfluous enumerated type
+	enum triangleType {noTriangle, scalene, isosceles, equilateral}; //Define superfluous enumeration type
 	string triangleText = ""; //Create a string to hold some output text
 
 	cout << "Input three triangle side lengths separated by spaces: "; // Prompt the user for input
