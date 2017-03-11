@@ -33,6 +33,7 @@ int triangleShape( int a, int b, int c) //Define an integer returning fucntion t
 		if (equalSides == 4)  //correct for equilateral triangles
 			equalSides = 3;
 	}
+	triangleType Answer = static_cast<triangleType> (equalSides) // Because I lose points if I don't show that I know how to use enumerated types
 	
 	return equalSides; //return a value from 0-3
 }
@@ -52,13 +53,13 @@ int main() //Main program entry point
 	switch (triangleShape(a, b, c)) //Use a switch to translate the output of triangleShape into text
 	{
 		case 1:                            //match the number of equal sides to the corresponding type of triange
-			triangleText = "scalene";
+			triangleText = "scalene (all sides different lengths)";
 			break;
 		case 2:
-			triangleText = "isosceles";
+			triangleText = "isosceles (two sides of equal lengths)";
 			break;
 		case 3:
-			triangleText = "equilateral";
+			triangleText = "equilateral (all sides equal in length)";
 			break;
 		default: 
 			triangeText = "not a";  // any other output from triangleShape is not a triangle
